@@ -1,0 +1,91 @@
+:root{
+    --darkviolet: #390083;
+    --violet: #8c4ffd;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Proxima Nova",-apple-system,Roboto,Arial,sans-serif,sans-serif;
+    color: beige;
+}
+
+
+header{
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--darkviolet);
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    
+
+}
+main{
+    background-color: var(--darkviolet);
+    padding: 30px;
+    position: relative;
+}
+
+section{
+    height: 64vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    background-color: beige;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+form div{
+    display: flex;
+    margin: 5px;
+    padding: 20px;
+    justify-content: center;
+}
+
+input{
+    color: var(--darkviolet) !important;
+    background-color: beige !important;
+    width: 300px;
+    padding: 15px;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+}
+button{
+    background-color: beige;
+    padding: 15px;
+    border: 2px;
+    border-color: var(--darkviolet);
+    border-radius: 0.5rem;
+    border-style: solid;
+    color: var(--darkviolet);
+    font-weight: 700;
+    cursor: pointer;
+}
+button:hover{
+    background-color: var(--darkviolet);
+    color: beige;
+}
+footer{
+    display: flex;
+    height: 10vh;
+    background-color: var(--darkviolet);
+    align-items: center;
+    justify-content: center;
+
+}
