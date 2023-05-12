@@ -13,6 +13,11 @@
     font-family: 'Secular One', sans-serif;
     color: beige;
 }
+p{
+    color: var(--violet);
+    padding: 20px;
+    text-align: center;
+}
 
 
 header{
@@ -40,6 +45,7 @@ main{
 section{
     height: 64vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 2rem;
@@ -58,21 +64,27 @@ form div{
     padding: 20px;
     justify-content: center;
 }
-
+.input{
+    display: flex;
+    flex-direction: column;
+}
 input{
     color: var(--darkviolet) !important;
     background-color: beige !important;
     width: 300px;
     padding: 15px;
+    margin: 10px;
     border: none;
     border-radius: 0.5rem;
     box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
 }
 button{
+    align-self: center;
     background-color: beige;
     padding: 15px;
     border: 2px;
     border-color: var(--darkviolet);
+    height: 49px;
     border-radius: 0.5rem;
     border-style: solid;
     color: var(--darkviolet);
@@ -90,4 +102,32 @@ footer{
     align-items: center;
     justify-content: center;
 
+}
+@media (max-width: 395px) {
+
+    section img{
+        width: 150px;
+    }
+    input {
+        width: 200px ;
+    }
+    
+}
+@media (max-height: 840px){
+    section img{
+        width: 150px;
+    }
+
+    .form{
+        flex-direction: row;
+    }
+}
+@media (max-height: 506px){
+    section img{
+        width: 100px;
+    }
+
+    p{
+        font-size: 14px;
+    }
 }
